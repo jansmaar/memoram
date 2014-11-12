@@ -10,6 +10,7 @@ class CardsController < ApplicationController
 	
 	def new
 		@cards = Card.new
+        
 	end
 	
 	def edit
