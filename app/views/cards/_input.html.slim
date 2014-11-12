@@ -1,0 +1,19 @@
+= form_for :card, url: cards_path, :html => { :multipart => true } do |f|
+	= f.text_field :first_name, :placeholder => "Voornaam"
+	= f.text_field :last_name, :placeholder => "Achternaam"
+	= f.date_field :birthday, :placeholder => "Geboorte datum"
+	= f.date_field :deceasedon, :placeholder => "Overleden op"
+	= f.text_field :announcement, :placeholder => "Aankondiging"
+	= f.text_field :poem, :placeholder => "Gedicht of verhaal"
+	= f.select :province, ["Drenthe", "Flevoland", "Friesland", "Gelderland", "Groningen", "Limburg", "Noord-Brabant", "Noord-Holland", "Overijssel", "Utrecht", "Zeeland", " Zuid-Holland"]
+	= f.text_field :birthplace, :placeholder => "Geboorte plaats"
+	= f.text_field :lastresidence, :placeholder => "Laatste woonplaats"
+	= f.text_field :signed, :placeholder => "Ondertekend door"
+	= f.text_field :funeral, :placeholder => "Locatie begravenis"
+	= f.text_field :visitaddress, :placeholder => "Opbaaradres"
+	= f.text_field :correspondence, :placeholder => "Correspondentie"
+	= f.submit "ontwerp"
+
+.test1
+	p hoi
+	.test hoi

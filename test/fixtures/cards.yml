@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  birthday: 2014-11-11
+  deceasedon: 2014-11-11
+  announcement: MyString
+  poem: MyText
+  province: MyString
+  birthplace: MyString
+  lastresidence: MyString
+  signed: MyText
+  funeral: MyString
+  visitaddress: MyString
+  correspondence: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  birthday: 2014-11-11
+  deceasedon: 2014-11-11
+  announcement: MyString
+  poem: MyText
+  province: MyString
+  birthplace: MyString
+  lastresidence: MyString
+  signed: MyText
+  funeral: MyString
+  visitaddress: MyString
+  correspondence: MyString
