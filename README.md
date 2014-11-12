@@ -1,4 +1,0 @@
-memoram
-=======
-
-minor ondernemen
