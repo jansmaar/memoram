@@ -9,11 +9,45 @@
 	= f.text_field :birthplace, :placeholder => "Geboorte plaats"
 	= f.text_field :lastresidence, :placeholder => "Laatste woonplaats"
 	= f.text_field :signed, :placeholder => "Ondertekend door"
-	= f.text_field :funeral, :placeholder => "Locatie begravenis"
+	= f.text_field :funeral, :placeholder => "Locatie begrafenis"
 	= f.text_field :visitaddress, :placeholder => "Opbaaradres"
 	= f.text_field :correspondence, :placeholder => "Correspondentie"
 	= f.submit "ontwerp"
 
-.test1
-	p hoi
-	.test hoi
+ul.choose_step
+	li.active= link_to 'stap 1', '#', :class => 'step_one'
+	li= link_to 'stap 2', '#', :class => 'step_two'
+	li= link_to 'stap 3', '#', :class => 'step_three'
+	li= link_to 'stap 4', '#', :class => 'step_four'
+
+= form_for :card, url: cards_path, :html => { :multipart => true } do |f|
+	.step#one.show
+		.content
+			h1 Voorkant
+			p vrije text
+	
+	.step#two
+		.content
+			h1 Linker binnenkant
+			= f.text_field :poem, :placeholder => "Gedicht of verhaal"
+			= f.text_field :announcement, :placeholder => "Aankondiging"
+			= f.text_field :first_name, :placeholder => "Voornaam"
+			= f.text_field :last_name, :placeholder => "Achternaam"
+			= f.text_field :birthplace, :placeholder => "Geboorte plaats"
+			= f.text_field :lastresidence, :placeholder => "Laatste woonplaats"
+			= f.date_field :birthday, :placeholder => "Geboorte datum"
+			= f.date_field :deceasedon, :placeholder => "Overleden op"
+			= f.text_field :signed, :placeholder => "Ondertekend door"
+
+	.step#three
+		.content
+			h1 Rechter binnenkant
+			= f.text_field :visitaddress, :placeholder => "Opbaaradres"
+			= f.text_field :funeral, :placeholder => "Locatie begrafenis"
+			= f.text_field :correspondence, :placeholder => "Correspondentie"
+	.step#four
+		.content
+			h1 Bestellen
+			= f.submit "ontwerp"
+	a.prev vorige
+	a.next volgende
