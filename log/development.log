@@ -34663,3 +34663,93 @@ Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequ
   Rendered /Users/nickschreuder/.rvm/gems/ruby-2.1.4/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
   Rendered /Users/nickschreuder/.rvm/gems/ruby-2.1.4/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
   Rendered /Users/nickschreuder/.rvm/gems/ruby-2.1.4/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.8ms)
+
+
+Started GET "/cards/5" for 127.0.0.1 at 2014-11-14 15:38:30 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCard Load (0.2ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered cards/show.html.slim within layouts/application (37.0ms)
+  Rendered layouts/_header.html.slim (9.5ms)
+Completed 200 OK in 226ms (Views: 193.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-14 15:38:30 +0100
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-11-14 15:38:30 +0100
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-11-14 15:38:30 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-11-14 15:38:30 +0100
+
+
+Started GET "/assets/rouwberichten.css?body=1" for 127.0.0.1 at 2014-11-14 15:38:30 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:30 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:30 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:30 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:30 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/cards.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-14 15:38:31 +0100
+
+
+Started GET "/cards/new" for 127.0.0.1 at 2014-11-14 15:38:51 +0100
+Processing by CardsController#new as HTML
+  Rendered cards/_input.html.slim (47.0ms)
+  Rendered cards/new.html.slim within layouts/application (60.1ms)
+  Rendered layouts/_header.html.slim (7.0ms)
+Completed 200 OK in 129ms (Views: 122.5ms | ActiveRecord: 0.0ms)
