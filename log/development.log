@@ -16699,6 +16699,7 @@ Processing by CardsController#new as HTML
   Rendered cards/_input.html.slim (3.1ms)
   Rendered cards/new.html.slim within layouts/application (3.8ms)
 Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+<<<<<<< Updated upstream
 =======
   app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___2772511558901534248_70126505182260'
 
@@ -16924,3 +16925,117 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 12:35:42
 
 Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-13 12:35:42 +0100
 >>>>>>> Stashed changes
+=======
+
+
+Started GET "/cards/new" for 127.0.0.1 at 2014-11-13 12:19:02 +0100
+Processing by CardsController#new as HTML
+  Rendered cards/_input.html.slim (8.9ms)
+  Rendered cards/new.html.slim within layouts/application (10.2ms)
+Completed 200 OK in 46ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 12:19:02 +0100
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-11-13 12:19:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 12:19:02 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 12:19:02 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-11-13 12:19:02 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-13 12:19:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 12:19:02 +0100
+
+
+Started GET "/assets/cards.js?body=1" for 127.0.0.1 at 2014-11-13 12:19:02 +0100
+>>>>>>> Stashed changes
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (5.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.4ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.slim within layouts/application (30.8ms)
+Completed 200 OK in 412ms (Views: 387.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/assets/cards.js?body=1" for 127.0.0.1 at 2014-11-14 10:38:25 +0100
+
+
+Started GET "/cards/new" for 127.0.0.1 at 2014-11-14 10:38:28 +0100
+Processing by CardsController#new as HTML
+  Rendered cards/_input.html.slim (15.5ms)
+  Rendered cards/new.html.slim within layouts/application (21.2ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)

@@ -1,7 +1,8 @@
-- @cards.each do |t|
-	li = link_to t.first_name, card_path(t)
+.container
+	- @cards.each do |t|
+		li = link_to t.first_name, card_path(t)
 
-	br
+		br
 
-= link_to "Rouwkaart maken", new_card_path, :class => 'test'
+	= link_to "Rouwkaart maken", new_card_path, :class => 'test'
 

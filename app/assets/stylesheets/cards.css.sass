@@ -3,17 +3,44 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .step .content
+	float: left
 	display: none
+
 
 ul.choose_step li.active a
 	color: blue
 	font-weight: bold
-	font-size: 1.2em
+	font-size: 1.5em
+
+.choose_step li
+	display: inline
+	margin-right: 8px
 
 .step.show .content
 	display: block
+	opacity: 1
 
 .content
 	width: 200px
 	height: 400px
 	border: 1px solid black
+
+.knoppen
+	width: 200px
+	height: 50px
+	
+	a.prev
+		float: left
+	a.next
+		float: right
+
+.kaart
+	float: left
+	margin-left: 50px
+	display: inline
+	height: 400px
+	width: 500px
+	border: 1px solid black
+
+	.usp-preview-display
+	text-align: center

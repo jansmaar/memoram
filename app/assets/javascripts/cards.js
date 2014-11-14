@@ -47,3 +47,11 @@ $(document).ready(function(){
 	});
 
 });
+
+jQuery(document).ready(function($) {
+	var input = $('.usp-preview-source');
+	var preview = $('.usp-preview-display');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
