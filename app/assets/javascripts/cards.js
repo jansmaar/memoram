@@ -48,9 +48,98 @@ $(document).ready(function(){
 
 });
 
+
 jQuery(document).ready(function($) {
-	var input = $('.usp-preview-source');
-	var preview = $('.usp-preview-display');
+	var input = $('.poem');
+	var preview = $('.poem1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.announcement');
+	var preview = $('.announcement1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.first_name');
+	var preview = $('.first_name1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.last_name');
+	var preview = $('.last_name1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.birthplace');
+	var preview = $('.birthplace1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.lastresidence');
+	var preview = $('.lastresidence1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.birthday');
+	var preview = $('.birthday1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.deceasedon');
+	var preview = $('.deceasedon1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.signed');
+	var preview = $('.signed1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.visitaddress');
+	var preview = $('.visitaddress1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.funeral');
+	var preview = $('.funeral1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
+jQuery(document).ready(function($) {
+	var input = $('.correspondences');
+	var preview = $('.correspondences1');
 	input.keyup(function(e) {
 		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
 	});
