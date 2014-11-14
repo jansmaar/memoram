@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 });
 
-
+// Live weergave van input gebruiker
 jQuery(document).ready(function($) {
 	var input = $('.poem');
 	var preview = $('.poem1');

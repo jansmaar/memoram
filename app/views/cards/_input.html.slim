@@ -10,11 +10,12 @@
 			.content
 				h1 Voorkant
 				p vrije text
+				= f.file_field :picture
 		
 		.step#two
 			.content
 				h1 Linker binnenkant
-				= f.text_area :poem, :placeholder => "Gedicht of verhaal", :class => 'poem'
+				= f.text_area :poem, :placeholder => "Gedicht of verhaal", :class => 'poem', autofocus: true
 				= f.text_field :announcement, :placeholder => "Aankondiging", :class => 'announcement'
 				= f.text_field :first_name, :placeholder => "Voornaam", :class => 'first_name'
 				= f.text_field :last_name, :placeholder => "Achternaam", :class => 'last_name'
@@ -35,19 +36,20 @@
 			.content
 				h1 Bestellen
 				= f.submit "ontwerp"
-	.kaart
-		p.poem1
-		p.announcement1
-		h2.first_name1
-		h2.last_name1
-		p.birthplace1
-		p.lastresidence1
-		p.birthday1
-		p.deceasedon1
-		p.signed1
-		p.visitaddress1
-		p.funeral1
-		p.correspondences1
+	.card
+		.preview
+			p.poem1
+			p.announcement1
+			h2.first_name1
+			h2.last_name1
+			p.birthplace1
+			p.lastresidence1
+			p.birthday1
+			p.deceasedon1
+			p.signed1
+			p.visitaddress1
+			p.funeral1
+			p.correspondences1
 		
 	.knoppen
 		a.prev vorige

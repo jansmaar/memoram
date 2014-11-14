@@ -11,6 +11,7 @@
 = @card.funeral
 = @card.visitaddress
 = @card.correspondence
+= image_tag @card.picture
 
 = button_to "verwijder", @card, :method => :delete
 = link_to "aanpassen", edit_card_path
