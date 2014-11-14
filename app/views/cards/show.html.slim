@@ -1,17 +1,19 @@
-= @card.first_name
-= @card.last_name
-= @card.birthday
-= @card.deceasedon
-= @card.announcement
-= @card.poem
-= @card.province
-= @card.birthplace
-= @card.lastresidence
-= @card.signed
-= @card.funeral
-= @card.visitaddress
-= @card.correspondence
-= image_tag @card.picture
+.container
+  .jumbotron
+	= @card.first_name
+	= @card.last_name
+	= @card.birthday
+	= @card.deceasedon
+	= @card.announcement
+	= @card.poem
+	= @card.province
+	= @card.birthplace
+	= @card.lastresidence
+	= @card.signed
+	= @card.funeral
+	= @card.visitaddress
+	= @card.correspondence
+	= image_tag @card.picture
 
-= button_to "verwijder", @card, :method => :delete
-= link_to "aanpassen", edit_card_path
+	= button_to "verwijder", @card, :method => :delete
+	= link_to "aanpassen", edit_card_path
