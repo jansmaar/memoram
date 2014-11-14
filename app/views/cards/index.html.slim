@@ -1,8 +1,16 @@
 .container
-	- @cards.each do |t|
-		li = link_to t.first_name, card_path(t)
 
-		br
-
-	= link_to "Rouwkaart maken", new_card_path, :class => 'test'
+	
+	
+	.row
+		- @cards.each do |t|
+		  .col-sm-6.col-md-4
+		    .thumbnail
+		      .caption
+		        	h3 = link_to "#{ t.first_name }" " #{ t.last_name }", card_path(t)
+		        	hr
+		        	p = t.birthplace
+		        	p = "#{ t.birthday  } " "-" " #{  t.deceasedon }"
+		        	= link_to "Bekijk dit bericht", card_path(t), :class => "btn btn-primary"
+	   
 
