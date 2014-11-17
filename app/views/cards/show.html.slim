@@ -5,7 +5,7 @@
 			p.poem = @card.poem
 			p.announcement = @card.announcement
 			h2.name = "#{ @card.first_name }" " #{ @card.last_name }"
-			p.dates = "#{ @card.birthday } " " - " " #{ @card.deceasedon }"
+			p.dates = "#{ @card.birthday.strftime("%d-%m-%y") } " " - " " #{ @card.deceasedon.strftime("%d-%m-%y") }"
 			p.signed = @card.signed
 			p.place = "#{ @card.province }" "," " #{ @card.birthplace }"
 			p.funeral = @card.funeral 
