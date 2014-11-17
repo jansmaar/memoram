@@ -10,7 +10,7 @@
 		        	h3 = link_to "#{ t.first_name }" " #{ t.last_name }", card_path(t)
 		        	hr
 		        	p = t.birthplace
-		        	p = "#{ t.birthday } " "-" " #{  t.deceasedon }"
+		        	p = "#{ t.birthday.strftime("%d-%m-%y")} " "-" " #{  t.deceasedon.strftime("%d-%m-%y") }"
 		        	= link_to "Bekijk dit bericht", card_path(t), :class => "btn btn-primary"
-	   
+	  
 

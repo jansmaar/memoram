@@ -10,7 +10,7 @@
 			.content
 				h1 Voorkant
 				p vrije text
-				= f.file_field :picture
+				= f.file_field :picture, :class => "file"
 		
 		.step#two
 			.content
@@ -37,19 +37,21 @@
 				h1 Bestellen
 				= f.submit "ontwerp"
 	.card
-		.preview
-			p.poem1
-			p.announcement1
-			h2.first_name1
-			h2.last_name1
-			p.birthplace1
-			p.lastresidence1
-			p.birthday1
-			p.deceasedon1
-			p.signed1
-			p.visitaddress1
-			p.funeral1
-			p.correspondences1
+		.upload-preview
+			img
+				.text-card		
+					p.poem1
+					p.announcement1
+					h2.first_name1
+					h2.last_name1
+					p.birthplace1
+					p.lastresidence1
+					p.birthday1
+					p.deceasedon1
+					p.signed1
+					p.visitaddress1
+					p.funeral1
+					p.correspondences1
 		
 	.knoppen
 		a.prev vorige
