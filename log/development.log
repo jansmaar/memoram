@@ -63779,4 +63779,121 @@ Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-17 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-17 10:11:03 +0100
 
 
+<<<<<<< Updated upstream
 Started GET "/assets/cards.js?body=1" for 127.0.0.1 at 2014-11-17 10:11:03 +0100
+=======
+Started GET "/assets/rouwberichten.css?body=1" for 127.0.0.1 at 2014-11-17 09:53:51 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-17 09:58:20 +0100
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-11-17 09:58:20 +0100
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-11-17 09:58:20 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-11-17 09:58:20 +0100
+
+
+Started GET "/assets/rouwberichten.css?body=1" for 127.0.0.1 at 2014-11-17 09:58:20 +0100
+
+
+Started GET "/cards/17" for 127.0.0.1 at 2014-11-17 09:59:20 +0100
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT 1  [["id", "17"]]
+  Rendered cards/show.html.slim within layouts/application (2.1ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-17 09:59:20 +0100
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-11-17 09:59:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:20 +0100
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/rouwberichten.css?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/cards.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-17 09:59:21 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-17 10:02:51 +0100
+Processing by CardsController#index as HTML
+  [1m[36mCard Load (0.3ms)[0m  [1mSELECT "cards".* FROM "cards"[0m
+  Rendered cards/index.html.slim within layouts/application (2.9ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cards/17" for 127.0.0.1 at 2014-11-17 10:02:56 +0100
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mCard Load (0.2ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT 1  [["id", "17"]]
+  Rendered cards/show.html.slim within layouts/application (3.0ms)
+  Rendered layouts/_header.html.slim (0.5ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+>>>>>>> Stashed changes
