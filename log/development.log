@@ -69401,3 +69401,373 @@ Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-17 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-17 12:00:32 +0100
+
+
+Started GET "/cards/1" for 127.0.0.1 at 2014-11-17 13:55:24 +0100
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCard Load (1.2ms)[0m  SELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered cards/show.html.slim within layouts/application (7.7ms)
+  Rendered layouts/_header.html.slim (0.5ms)
+Completed 200 OK in 56ms (Views: 48.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-17 13:55:24 +0100
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-11-17 13:55:24 +0100
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-11-17 13:55:24 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-11-17 13:55:24 +0100
+
+
+Started GET "/assets/rouwberichten.css?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/assets/cards.js?body=1" for 127.0.0.1 at 2014-11-17 13:55:25 +0100
+
+
+Started GET "/cards/new" for 127.0.0.1 at 2014-11-17 13:55:26 +0100
+Processing by CardsController#new as HTML
+  Rendered cards/_input.html.slim (26.2ms)
+  Rendered cards/new.html.slim within layouts/application (37.0ms)
+  Rendered layouts/_header.html.slim (7.9ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cards" for 127.0.0.1 at 2014-11-17 13:55:45 +0100
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d5vraJHbUtSxwaEptKIJlEf6KYqlZVMsWIMPa0TUuKc=", "card"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x00000101717f30 @tempfile=#<Tempfile:/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/RackMultipart20141117-2466-s9ggq3>, @original_filename="IMG_5801.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"card[picture]\"; filename=\"IMG_5801.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "poem"=>"etr§", "announcement"=>"kjh", "first_name"=>"jkhjk", "last_name"=>"hjk", "birthplace"=>"hkj", "lastresidence"=>"hjk", "birthday"=>"kjh", "deceasedon"=>"jk", "signed"=>"hk", "visitaddress"=>"", "funeral"=>"", "correspondence"=>"", "province"=>"Drenthe"}, "commit"=>"ontwerp"}
+Command :: file -b --mime '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1jwqrqv.jpeg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1r3mz9b.jpeg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1r3mz9b.jpeg[0]'
+Command :: convert '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1r3mz9b.jpeg[0]' -auto-orient -resize "300x300>" '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1r3mz9b20141117-2466-za7mvb'
+Command :: file -b --mime '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1r3mz9b20141117-2466-za7mvb'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1r3mz9b.jpeg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1r3mz9b.jpeg[0]'
+Command :: convert '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1r3mz9b.jpeg[0]' -auto-orient -resize "100x100>" '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1r3mz9b20141117-2466-oxmj0h'
+Command :: file -b --mime '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-1r3mz9b20141117-2466-oxmj0h'
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/59a280b89c15b03514932d79b1e6a5cf20141117-2466-11kc9jy.jpeg'
+Binary data inserted for `string` type on column `picture_content_type`
+  [1m[35mSQL (9.4ms)[0m  INSERT INTO "cards" ("announcement", "birthplace", "correspondence", "created_at", "first_name", "funeral", "last_name", "lastresidence", "picture_content_type", "picture_file_name", "picture_file_size", "picture_updated_at", "poem", "province", "signed", "updated_at", "visitaddress") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["announcement", "kjh"], ["birthplace", "hkj"], ["correspondence", ""], ["created_at", Mon, 17 Nov 2014 12:55:48 UTC +00:00], ["first_name", "jkhjk"], ["funeral", ""], ["last_name", "hjk"], ["lastresidence", "hjk"], ["picture_content_type", "image/jpeg"], ["picture_file_name", "IMG_5801.jpeg"], ["picture_file_size", 1887761], ["picture_updated_at", Mon, 17 Nov 2014 12:55:45 UTC +00:00], ["poem", "etr§"], ["province", "Drenthe"], ["signed", "hk"], ["updated_at", Mon, 17 Nov 2014 12:55:48 UTC +00:00], ["visitaddress", ""]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/cards
+Completed 302 Found in 2384ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/cards" for 127.0.0.1 at 2014-11-17 13:55:48 +0100
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.3ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.slim within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    10: 		        	h3 = link_to "#{ t.first_name }" " #{ t.last_name }", card_path(t)
+    11: 		        	hr
+    12: 		        	p = t.birthplace
+    13: 		        	p = "#{ t.birthday.strftime("%d-%m-%y")} " "-" " #{  t.deceasedon.strftime("%d-%m-%y") }"
+    14: 		        	= link_to "Bekijk dit bericht", card_path(t), :class => "btn btn-primary"
+    15: 	  
+  app/views/cards/index.html.slim:13:in `block in _app_views_cards_index_html_slim__3575180196974461146_2158563400'
+  app/views/cards/index.html.slim:6:in `_app_views_cards_index_html_slim__3575180196974461146_2158563400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.0@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.0@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.0@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-17 13:56:00 +0100
+Processing by CardsController#index as HTML
+  [1m[36mCard Load (0.2ms)[0m  [1mSELECT "cards".* FROM "cards"[0m
+  Rendered cards/index.html.slim within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    10: 		        	h3 = link_to "#{ t.first_name }" " #{ t.last_name }", card_path(t)
+    11: 		        	hr
+    12: 		        	p = t.birthplace
+    13: 		        	p = "#{ t.birthday.strftime("%d-%m-%y")} " "-" " #{  t.deceasedon.strftime("%d-%m-%y") }"
+    14: 		        	= link_to "Bekijk dit bericht", card_path(t), :class => "btn btn-primary"
+    15: 	  
+  app/views/cards/index.html.slim:13:in `block in _app_views_cards_index_html_slim__3575180196974461146_2158563400'
+  app/views/cards/index.html.slim:6:in `_app_views_cards_index_html_slim__3575180196974461146_2158563400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.0@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.0@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.0@global/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCards (20141111162341)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "cards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "birthday" date, "deceasedon" date, "announcement" varchar(255), "poem" text, "province" varchar(255), "birthplace" varchar(255), "lastresidence" varchar(255), "signed" text, "funeral" varchar(255), "visitaddress" varchar(255), "correspondence" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141111162341"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to AddAttachmentPictureToCards (20141114124536)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "cards" ADD "picture_file_name" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "cards" ADD "picture_content_type" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "cards" ADD "picture_file_size" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "cards" ADD "picture_updated_at" datetime
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141114124536"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.2ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.slim within layouts/application (36.2ms)
+  Rendered layouts/_header.html.slim (6.4ms)
+Completed 200 OK in 205ms (Views: 178.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/rouwberichten.css?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:23 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/assets/cards.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:24 +0100
+
+
+Started GET "/cards/new" for 127.0.0.1 at 2014-11-17 13:56:25 +0100
+Processing by CardsController#new as HTML
+  Rendered cards/_input.html.slim (18.4ms)
+  Rendered cards/new.html.slim within layouts/application (21.7ms)
+  Rendered layouts/_header.html.slim (6.4ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/cards" for 127.0.0.1 at 2014-11-17 13:56:48 +0100
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d5vraJHbUtSxwaEptKIJlEf6KYqlZVMsWIMPa0TUuKc=", "card"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x000001029316a8 @tempfile=#<Tempfile:/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/RackMultipart20141117-2736-1y9fvq0>, @original_filename="test.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"card[picture]\"; filename=\"test.jpg\"\r\nContent-Type: image/jpeg\r\n">, "poem"=>"Jorik", "announcement"=>"JAnsma", "first_name"=>"hoi", "last_name"=>"hoi", "birthplace"=>"hoi", "lastresidence"=>"", "birthday"=>"22-10-2014", "deceasedon"=>"22-11-2015", "signed"=>"qweqwe", "visitaddress"=>"", "funeral"=>"", "correspondence"=>"", "province"=>"Drenthe"}, "commit"=>"ontwerp"}
+Command :: file -b --mime '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-q263zo.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-1ylmeul.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-1ylmeul.jpg[0]'
+Command :: convert '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-1ylmeul.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-1ylmeul20141117-2736-159iyk5'
+Command :: file -b --mime '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-1ylmeul20141117-2736-159iyk5'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-1ylmeul.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-1ylmeul.jpg[0]'
+Command :: convert '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-1ylmeul.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-1ylmeul20141117-2736-1bdz5hv'
+Command :: file -b --mime '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-1ylmeul20141117-2736-1bdz5hv'
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/wy/l9px5y0d3mqg5mtpj6svf86m0000gn/T/098f6bcd4621d373cade4e832627b4f620141117-2736-ixotjq.jpg'
+Binary data inserted for `string` type on column `picture_content_type`
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "cards" ("announcement", "birthday", "birthplace", "correspondence", "created_at", "deceasedon", "first_name", "funeral", "last_name", "lastresidence", "picture_content_type", "picture_file_name", "picture_file_size", "picture_updated_at", "poem", "province", "signed", "updated_at", "visitaddress") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["announcement", "JAnsma"], ["birthday", Wed, 22 Oct 2014], ["birthplace", "hoi"], ["correspondence", ""], ["created_at", Mon, 17 Nov 2014 12:56:48 UTC +00:00], ["deceasedon", Sun, 22 Nov 2015], ["first_name", "hoi"], ["funeral", ""], ["last_name", "hoi"], ["lastresidence", ""], ["picture_content_type", "image/jpeg"], ["picture_file_name", "test.jpg"], ["picture_file_size", 60774], ["picture_updated_at", Mon, 17 Nov 2014 12:56:48 UTC +00:00], ["poem", "Jorik"], ["province", "Drenthe"], ["signed", "qweqwe"], ["updated_at", Mon, 17 Nov 2014 12:56:48 UTC +00:00], ["visitaddress", ""]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/cards
+Completed 302 Found in 485ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/cards" for 127.0.0.1 at 2014-11-17 13:56:48 +0100
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.2ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.slim within layouts/application (1.6ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/header.css?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/rouwberichten.css?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/assets/cards.js?body=1" for 127.0.0.1 at 2014-11-17 13:56:49 +0100
+
+
+Started GET "/cards/1" for 127.0.0.1 at 2014-11-17 13:56:50 +0100
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCard Load (0.2ms)[0m  [1mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered cards/show.html.slim within layouts/application (8.4ms)
+  Rendered layouts/_header.html.slim (0.3ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.2ms)
