@@ -1,10 +1,10 @@
 .container.bg-color
 
 	ul.choose_step
-		li.active= link_to 'Voorkant', '#', :class => 'step_one'
-		li= link_to 'Binnenkant links', '#', :class => 'step_two'
-		li= link_to 'Binnenkant rechts', '#', :class => 'step_three'
-		li= link_to 'Afronden', '#', :class => 'step_four'
+		li.active= link_to 'Voorkant', :class => 'step_one'
+		li= link_to 'Binnenkant', :class => 'step_two'
+		li= link_to 'Voorbeeld', :class => 'step_three'
+		li= link_to 'Afronden', :class => 'step_four'
  	hr
 	= form_for :card, url: cards_path, :html => { :multipart => true } do |f|
 		.step#one.show
@@ -23,14 +23,15 @@
 				= f.date_field :birthday, :placeholder => "Geboorte datum", :class => 'birthday'
 				= f.date_field :deceasedon, :placeholder => "Overleden op", :class => 'deceasedon'
 				= f.text_field :signed, :placeholder => "Ondertekend door", :class => 'signed'
-
-
-		.step#three
-			.content
 				= f.text_field :visitaddress, :placeholder => "Opbaaradres", :class => 'visitaddress', autofocus: true
 				= f.text_field :funeral, :placeholder => "Locatie begrafenis", :class => 'funeral'
 				= f.text_field :correspondence, :placeholder => "Correspondentie", :class => 'correspondences'
 				= f.select :province, ["Drenthe", "Flevoland", "Friesland", "Gelderland", "Groningen", "Limburg", "Noord-Brabant", "Noord-Holland", "Overijssel", "Utrecht", "Zeeland", " Zuid-Holland"]
+
+
+		.step#three
+			.content
+				
 		
 		.step#four
 			.content
