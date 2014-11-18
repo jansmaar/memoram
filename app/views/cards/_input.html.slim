@@ -9,9 +9,9 @@
 	= form_for :card, url: cards_path, :html => { :multipart => true } do |f|
 		.step#one.show
 			.content
-				= f.file_field :picture, :class => "custom-file-input"
+				= f.file_field :picture, :class => "file"
 				.knoppen
-					a.btn.btn-warning.next volgende
+					a.next volgende
 		
 		.step#two
 			.content 
@@ -25,11 +25,16 @@
 				= f.date_field :deceasedon, :placeholder => "Overleden op", :class => 'deceasedon'
 				= f.text_field :signed, :placeholder => "Ondertekend door", :class => 'signed'
 				.knoppen
+<<<<<<< HEAD
 					a.btn.btn-default.prev vorige
 <<<<<<< HEAD
 					a.btn.btn-warning.next volgende
 =======
 					a.btn.btn-warning.next volgende 
+>>>>>>> FETCH_HEAD
+=======
+					a.prev vorige
+					a.next volgende
 >>>>>>> FETCH_HEAD
 
 		.step#three
@@ -39,14 +44,14 @@
 				= f.text_field :correspondence, :placeholder => "Correspondentie", :class => 'correspondences'
 				= f.select :province, ["Drenthe", "Flevoland", "Friesland", "Gelderland", "Groningen", "Limburg", "Noord-Brabant", "Noord-Holland", "Overijssel", "Utrecht", "Zeeland", " Zuid-Holland"]
 				.knoppen
-					a.btn.btn-default.prev vorige
-					a.btn.btn-warning.next volgende
+					a.prev vorige
+					a.next volgende
 
 		.step#four
 			.content
 				= f.submit "Afronden"
 				.knoppen
-					a.btn.btn-default.prev vorige
+					a.prev vorige
 	.card
 		.upload-preview
 			img.draggable
