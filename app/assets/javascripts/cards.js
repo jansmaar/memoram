@@ -7,11 +7,9 @@ $(document).ready(function(){
     	$( ".draggable" ).draggable({ grid: [ 10, 10 ] });
   	});
 	
-	$(function() {
-    	$( "#draggable1" ).draggable({ grid: [ 10, 10 ] });
-  	});
 	var current_step = 0;
 	var step = $('.step');
+	var card = $('.card');
 	var choose_step = $('ul.choose_step li');
 	$('.prev').hide();
 
@@ -29,6 +27,7 @@ $(document).ready(function(){
 
 	var move = function(current_step) {
 		$('.step').removeClass('show')
+		$('.card').removeClass('show')
 		
 		step.each(function(key, value){
 			if (key == current_step) {
@@ -37,6 +36,13 @@ $(document).ready(function(){
 				var prev = ($(value).prev('.step').length) == 0 ? ($('.prev').hide()) : ($('.prev').show());
 
 				var next = ($(value).next('.step').length) == 0 ? ($('.next').hide()) : ($('.next').show());
+
+			}
+			highlightStep(current_step);
+		});
+		card.each(function(key, value){
+			if (key == current_step) {
+				$(value).addClass('show')
 
 			}
 			highlightStep(current_step);
