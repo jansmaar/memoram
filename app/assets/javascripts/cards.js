@@ -49,16 +49,27 @@ $(document).ready(function(){
 		});
 	}
 
-	$('.next').click(function(){
-		current_step += 1
-		move(current_step);
-	});
+	$('.next').click(function() {
+			current_step += 1
+			move(current_step);
 
-	$('.prev').click(function(){
-		current_step -= 1
-		move(current_step);
-	});
+		    if ($('#two').hasClass('show')){
+		 	$('.cardright').addClass('show');
+		        } else {
+		            $('.cardright').removeClass('show');
+		    }
+        });
 
+	$('.prev').click(function() {
+			current_step -= 1
+			move(current_step);
+
+		    if ($('#two').hasClass('show')){
+		 	$('.cardright').addClass('show');
+		        } else {
+		            $('.cardright').removeClass('show');
+		    }
+        });
 });
 
 // Live weergave van input gebruiker
