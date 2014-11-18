@@ -17,3 +17,21 @@
 	
 	= button_to "verwijder", @card, :method => :delete
 	= link_to "aanpassen", edit_card_path
+
+		.card-front
+			= image_tag @card.picture, :class => "card-background"
+		.text-card
+			p.poem = @card.poem
+			p.announcement = @card.announcement
+			h2.name = "#{ @card.first_name }" " #{ @card.last_name }"
+			p.dates = "#{ @card.birthday.strftime("%d-%m-%y") } " " - " " #{ @card.deceasedon.strftime("%d-%m-%y") }"
+			p.signed = @card.signed
+			p.place = "#{ @card.province }" "," " #{ @card.birthplace }"
+			p.funeral = @card.funeral 
+			p. = @card.correspondence 
+			p. = @card.lastresidence 
+			p. = @card.visitaddress
+	
+= button_to "verwijder", @card, :method => :delete
+= link_to "aanpassen", edit_card_path
+
