@@ -2,11 +2,20 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready(function(){
-	
-	$(function() {
-    	$( ".draggable" ).draggable({ grid: [ 10, 10 ] });
-  	});
-	
+
+        $(".edit").mouseover(function(){
+			$(".edit").resizable();	
+			$(".ui-resizable-handle").css( "display", "block");
+    		$(".edit").css("border","2px red dotted");
+    		$(".edit").draggable({ grid: [ 10, 10 ] });
+    		
+    	});	
+		
+		$(".edit").mouseleave(function() {
+  			$(".edit").css( "border", "none" );
+  			$(".ui-resizable-handle").css( "display", "none");
+		});
+    	
 	var current_step = 0;
 	var step = $('.step');
 	var card = $('.card');
