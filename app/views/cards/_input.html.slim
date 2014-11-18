@@ -26,7 +26,7 @@
 
 		.step#three
 			.content
-				= f.text_field :visitaddress, :placeholder => "Opbaaradres", :class => 'visitaddress'
+				= f.text_field :visitaddress, :placeholder => "Opbaaradres", :class => 'visitaddress', autofocus: true
 				= f.text_field :funeral, :placeholder => "Locatie begrafenis", :class => 'funeral'
 				= f.text_field :correspondence, :placeholder => "Correspondentie", :class => 'correspondences'
 				= f.select :province, ["Drenthe", "Flevoland", "Friesland", "Gelderland", "Groningen", "Limburg", "Noord-Brabant", "Noord-Holland", "Overijssel", "Utrecht", "Zeeland", " Zuid-Holland"]
@@ -35,26 +35,24 @@
 			.content
 				= f.submit "Afronden"
 		
-		.card#one.show
+		.card.show
 			.upload-preview
 				img.draggable		
 								
-
 		.card
-				p.poem1.draggable
-				p.announcement1.draggable
-				h2.first_name1#draggable
-				h2.last_name1#draggable
-				p.birthplace1#draggable
-				p.lastresidence1#draggable
-				p.birthday1#draggable
-
-		.card#three
-				p.deceasedon1#draggable
-				p.signed1#draggable
-				p.visitaddress1#draggable
-				p.funeral1#draggable
-				p.correspondences1#draggable
+			p.poem1.draggable
+			p.announcement1.draggable
+			h2.first_name1#draggable
+			h2.last_name1#draggable
+			p.birthplace1#draggable
+			p.lastresidence1#draggable
+			p.birthday1#draggable
+		.card
+			p.deceasedon1#draggable
+			p.signed1#draggable
+			p.visitaddress1#draggable
+			p.funeral1#draggable
+			p.correspondences1#draggable
 
 		.knoppen
 			a.btn.btn-default.prev vorige
