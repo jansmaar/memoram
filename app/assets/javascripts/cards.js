@@ -3,6 +3,13 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready(function(){
 	
+	$(function() {
+    	$( ".draggable" ).draggable({ grid: [ 10, 10 ] });
+  	});
+	
+	$(function() {
+    	$( "#draggable1" ).draggable({ grid: [ 10, 10 ] });
+  	});
 	var current_step = 0;
 	var step = $('.step');
 	var choose_step = $('ul.choose_step li');
@@ -159,4 +166,6 @@ $(document).ready(function(){
        };
        reader.readAsDataURL(file);
     });
+
+
 });

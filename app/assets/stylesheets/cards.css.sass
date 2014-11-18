@@ -13,11 +13,13 @@ ul.choose_step
 
 input #card_picture 
 	border: none
+
 .content input
 	border-color: #cccccc
 	font-size: 14px
 	text-align: left
 	border-width: 1px
+	width: 100%
 	border-radius: 5px
 	border-style: solid
 	padding: 5px
@@ -65,8 +67,11 @@ ul.choose_step li.active a
 	display: inline
 	height: 622px
 	width: 439px
-	box-shadow: 0 0 7px 1px #e2e2e2
+	box-shadow: 0 0 7px 1px #e2e2e2 !important
 	background-color: white
+	overflow: auto
+	overflow-y:hidden
+	overflow-x:hidden
 
 .upload-preview
 	position:relatie
@@ -76,5 +81,21 @@ ul.choose_step li.active a
 img
 	width: 100%
 	height: 100%
+
+p.poem1
+	text-align: center
+	margin-top: 90px
+
+p.announcement1  
+	text-align: center
+
+h2.last_name1 
+	text-align: center
+
+h2.first_name1 
+	text-align: center
+
+.draggable
+	cursor: move
 
 
