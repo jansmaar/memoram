@@ -9,7 +9,7 @@
 	= form_for :card, url: cards_path, :html => { :multipart => true } do |f|
 		.step#one.show
 			.content
-				= f.file_field :picture, :class => "file"
+				= f.file_field :picture, :class => "custom-file-input"
 				.knoppen
 					a.btn.btn-warning.next volgende
 		
@@ -26,7 +26,11 @@
 				= f.text_field :signed, :placeholder => "Ondertekend door", :class => 'signed'
 				.knoppen
 					a.btn.btn-default.prev vorige
+<<<<<<< HEAD
 					a.btn.btn-warning.next volgende
+=======
+					a.btn.btn-warning.next volgende 
+>>>>>>> FETCH_HEAD
 
 		.step#three
 			.content
