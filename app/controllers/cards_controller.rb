@@ -37,7 +37,7 @@ class CardsController < ApplicationController
 	
 	private
   def card_params
-  	params.require(:card).permit(:first_name, :last_name, :birthday, :deceasedon, :announcement, :poem, :province, :birthplace, :lastresidence, :signed, :funeral, :visitaddress, :correspondence, :picture)
+  	params.require(:card).permit(:first_name, :last_name, :birthday, :deceasedon, :announcement, :poem, :province, :birthplace, :lastresidence, :signed, :funeral, :visitaddress, :correspondence, :picture, :input_front)
   end
 
 end
