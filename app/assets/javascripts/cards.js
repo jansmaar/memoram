@@ -3,17 +3,17 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready(function(){
 
-        $(".edit").mouseover(function(){
-			$(".edit").resizable();	
-			$(".ui-resizable-handle").css( "display", "block");
+		$( ".edit" ).resizable();
+  	
+        $(".edit").mouseover(function(){		
+			$(".ui-resizable-handle").css( "display", "block !important");
     		$(".edit").css("border","2px red dotted");
-    		$(".edit").draggable({ grid: [ 10, 10 ] });
-    		
+    		$(".edit").draggable({ snap: true });
     	});	
-		
+
 		$(".edit").mouseleave(function() {
   			$(".edit").css( "border", "none" );
-  			$(".ui-resizable-handle").css( "display", "none");
+  			
 		});
     	
 	var current_step = 0;
