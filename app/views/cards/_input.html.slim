@@ -5,7 +5,7 @@
 		li= link_to 'Binnenkant', :class => 'step_two'
 		li= link_to 'Voorbeeld', :class => 'step_three'
 		li= link_to 'Afronden', :class => 'step_four'
- 	hr
+
 	= form_for :card, url: cards_path, :html => { :multipart => true } do |f|
 		.step#one.show
 			.content
@@ -39,10 +39,10 @@
 		
 		.card.show
 			.upload-preview
-				img.draggable		
+				img.edit
 								
 		.card
-			p.poem1.draggable
+			p.poem1.edit
 			p.announcement1.draggable
 			h2.first_name1#draggable
 			h2.last_name1#draggable
