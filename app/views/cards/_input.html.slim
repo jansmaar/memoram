@@ -10,7 +10,7 @@
 		.step#one.show
 			.content
 				= f.file_field :picture, :class => "file"
-				= f.text_field :input_front
+				= f.text_field :input_front, :class => 'input_front'
 		
 		.step#two
 			.content 
@@ -38,6 +38,7 @@
 				= f.submit "Afronden"
 		
 		.card.show
+			p.input_front1
 			.upload-preview.edit
 				img
 								

@@ -178,6 +178,14 @@ jQuery(document).ready(function($) {
 	});
 });
 
+jQuery(document).ready(function($) {
+	var input = $('.input_front');
+	var preview = $('.input_front1');
+	input.keyup(function(e) {
+		preview.html(input.val().replace(/\r\n|\r|\n/g, '<br />'));
+	});
+});
+
 // upload van foto live weergave
 $(document).ready(function(){
     var preview = $(".upload-preview img");
@@ -195,3 +203,23 @@ $(document).ready(function(){
 
 
 });
+// datepicker
+$(function() {
+        $( ".birthday" ).datepicker({
+            dateFormat : 'dd/mm/yy',
+            changeMonth : true,
+            changeYear : true,
+            yearRange: '-110y:c+nn',
+            maxDate: '-0d'
+        });
+    });
+
+$(function() {
+        $( ".deceasedon" ).datepicker({
+            dateFormat : 'dd/mm/yy',
+            changeMonth : true,
+            changeYear : true,
+            yearRange: '-110y:c+nn',
+            maxDate: '-0d'
+        });
+    });
