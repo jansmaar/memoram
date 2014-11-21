@@ -13,20 +13,19 @@
 				= f.label :pictures
 					= file_field_tag "images[]", type: :file, multiple: true, :class => 'file'
 					= file_field_tag "images[]", type: :file, multiple: true, :class => 'file_one'
-				= f.text_field :input_front, :class => 'input_front'
+				= f.text_field :input_front, :class => ['input_front', 'form-control']
 
 
 		.step#two
 			.content 
-				= f.text_area :poem, :placeholder => "Gedicht of verhaal", :class => 'poem', autofocus: true
-				= f.text_field :announcement, :placeholder => "Aankondiging", :class => 'announcement'
-				= f.text_field :first_name, :placeholder => "Voornaam", :class => 'first_name'
-				= f.text_field :last_name, :placeholder => "Achternaam", :class => 'last_name'
-				= f.text_field :birthplace, :placeholder => "Geboorte plaats", :class => 'birthplace'
-				= f.text_field :lastresidence, :placeholder => "Laatste woonplaats", :class => 'lastresidence'
-				= f.date_field :birthday, :placeholder => "Geboorte datum", :class => 'birthday'
-				= f.date_field :deceasedon, :placeholder => "Overleden op", :class => 'deceasedon'
-				= f.text_field :signed, :placeholder => "Ondertekend door", :class => 'signed'
+				= f.text_area :poem, :placeholder => "Gedicht of verhaal", :class => ['poem', 'form-control'], autofocus: true
+				= f.text_field :name, :placeholder => "Naam", :class => ['name', 'form-control']
+				= f.text_field :birthplace, :placeholder => "Geboorte plaats", :class => ['birthplace', 'form-control']
+				= f.text_field :lastresidence, :placeholder => "Laatste woonplaats", :class => ['lastresidence', 'form-control']
+				= f.date_field :birthday, :placeholder => "Geboorte datum", :class => ['birthday', 'form-control']
+				= f.date_field :deceasedon, :placeholder => "Overleden op", :class => ['deceasedon', 'form-control']
+				= f.text_area :signed, :placeholder => "Ondertekend door", :class => ['signed', 'form-control']
+				= f.text_area :parting_information, :placeholder => "ASD?", :class => ['parting_information', 'form-control']
 				= f.select :province, ["Drenthe", "Flevoland", "Friesland", "Gelderland", "Groningen", "Limburg", "Noord-Brabant", "Noord-Holland", "Overijssel", "Utrecht", "Zeeland", " Zuid-Holland"]
 
 
@@ -46,19 +45,18 @@
 				img
 								
 		.card
+			
+		.cardright
 			p.edit.edit2.poem1 
-			p.announcement1.draggable
-			h2.first_name1#draggable
-			h2.last_name1#draggable
+			h2.name1#draggable
 			p.birthplace1#draggable
 			p.lastresidence1#draggable
+			br
 			p.birthday1#draggable
-		.cardright
 			p.deceasedon1#draggable
+			br
 			p.signed1#draggable
-			p.visitaddress1#draggable
-			p.funeral1#draggable
-			p.correspondences1#draggable
+			p.parting_information1#draggable
 
 		.knoppen
 			a.btn.btn-default.prev vorige

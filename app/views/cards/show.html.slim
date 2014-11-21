@@ -2,19 +2,18 @@
 
 .container
 	.card-front
-		= @card.pictures.each do |p|
+		- @card.pictures.each do |p|
 			= image_tag p.image, :class => "card-background"
 
 	.text-card
 		p = @card.input_front
-		p. hoi
-		.flip.p.poem = @card.poem
-		p.announcement = @card.announcement
-		h2.name = "#{ @card.first_name }" " #{ @card.last_name }"
+		p.poem = @card.poem
+		h2.name = @card.name
 		p.dates = "#{ @card.birthday.strftime("%d-%m-%y") } " " - " " #{ @card.deceasedon.strftime("%d-%m-%y") }"
 		p.signed = @card.signed
 		p.place = "#{ @card.province }" "," " #{ @card.birthplace }"
-		p. = @card.lastresidence 
+		p = @card.lastresidence
+		p = @card.parting_information 
 
 
 	

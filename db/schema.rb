@@ -11,14 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121115616) do
+ActiveRecord::Schema.define(version: 20141121132209) do
 
   create_table "cards", force: true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
     t.date     "birthday"
     t.date     "deceasedon"
-    t.string   "announcement"
     t.text     "poem"
     t.string   "province"
     t.string   "birthplace"
@@ -27,6 +24,8 @@ ActiveRecord::Schema.define(version: 20141121115616) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "input_front"
+    t.string   "name"
+    t.text     "parting_information"
   end
 
   create_table "pictures", force: true do |t|

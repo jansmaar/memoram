@@ -21,13 +21,12 @@ class CardsController < ApplicationController
 	def create
 	  @card = Card.new(card_params)
 	  if @card.save 
+	  	redirect_to action: "index"
 	  	if params[:images]
         #===== The magic is here ;)
 	        params[:images].each { |image|
 	          @card.pictures.create(image: image)
 	        }
-
-	     	redirect_to action: "index"  
       		end
   		end
 	  
@@ -47,7 +46,7 @@ class CardsController < ApplicationController
 	
 	private
   def card_params
-  	params.require(:card).permit(:first_name, :last_name, :birthday, :deceasedon, :announcement, :poem, :province, :birthplace, :lastresidence, :signed, :funeral, :visitaddress, :correspondence, :picture, :input_front)
+  	params.require(:card).permit(:name, :birthday, :deceasedon, :poem, :province, :birthplace, :lastresidence, :signed, :picture, :input_front, :parting_information)
   end
 
 end
