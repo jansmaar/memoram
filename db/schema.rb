@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141118141054) do
+ActiveRecord::Schema.define(version: 20141120152338) do
 
   create_table "cards", force: true do |t|
     t.string   "first_name"
@@ -29,11 +29,17 @@ ActiveRecord::Schema.define(version: 20141118141054) do
     t.string   "correspondence"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "picture_file_name"
-    t.string   "picture_content_type"
-    t.integer  "picture_file_size"
-    t.datetime "picture_updated_at"
     t.text     "input_front"
+  end
+
+  create_table "pictures", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.integer  "card_id"
   end
 
 end

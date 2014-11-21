@@ -9,8 +9,10 @@
 	= form_for :card, url: cards_path, :html => { :multipart => true } do |f|
 		.step#one.show
 			.content
-				= f.file_field :picture, :class => "file"
-				= f.text_field :input_front, :class => 'input_front'
+					= f.label :pictures
+						= file_field_tag "images[]", type: :file, multiple: true, :class => 'file'
+						= file_field_tag "images[]", type: :file, multiple: true, :class => 'file_one'
+					= f.text_field :input_front, :class => 'input_front'
 		
 		.step#two
 			.content 
@@ -40,6 +42,8 @@
 		.card.show
 			p.input_front1
 			.upload-preview.edit
+				img
+			.upload-preview_one.edit
 				img
 								
 		.card

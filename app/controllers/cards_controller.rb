@@ -11,6 +11,7 @@ class CardsController < ApplicationController
 	def new
 		@cards = Card.new
         
+		
 	end
 	
 	def edit
@@ -18,9 +19,18 @@ class CardsController < ApplicationController
 	end
 	
 	def create
-		@cards = Card.new(card_params)
-	  @cards.save
-	  redirect_to action: "index"
+	  @card = Card.new(card_params)
+	  if @card.save 
+	  	if params[:images]
+        #===== The magic is here ;)
+	        params[:images].each { |image|
+	          @card.pictures.create(image: image)
+	        }
+
+	     	redirect_to action: "index"  
+      		end
+  		end
+	  
   end
 	
 	def update
