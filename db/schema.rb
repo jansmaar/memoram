@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141120152338) do
+ActiveRecord::Schema.define(version: 20141121115616) do
 
   create_table "cards", force: true do |t|
     t.string   "first_name"
@@ -24,9 +24,6 @@ ActiveRecord::Schema.define(version: 20141120152338) do
     t.string   "birthplace"
     t.string   "lastresidence"
     t.text     "signed"
-    t.string   "funeral"
-    t.string   "visitaddress"
-    t.string   "correspondence"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "input_front"
