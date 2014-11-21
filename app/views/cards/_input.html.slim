@@ -11,7 +11,8 @@
 			.content
 				= f.file_field :picture, :class => "file"
 				= f.text_field :input_front, :class => 'input_front'
-		
+				input#color1 name="color1" type="text" value="#333399"
+
 		.step#two
 			.content 
 				= f.text_area :poem, :placeholder => "Gedicht of verhaal", :class => 'poem', autofocus: true
