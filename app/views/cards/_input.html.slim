@@ -9,18 +9,13 @@
 	= form_for :card, url: cards_path, :html => { :multipart => true } do |f|
 		.step#one.show
 			.content
-<<<<<<< HEAD
-					= f.label :pictures
-						= file_field_tag "images[]", type: :file, multiple: true, :class => 'file'
-						= file_field_tag "images[]", type: :file, multiple: true, :class => 'file_one'
-					= f.text_field :input_front, :class => 'input_front'
-		
-=======
-				= f.file_field :picture, :class => "file"
-				= f.text_field :input_front, :class => 'input_front'
-				input#color1 name="color1" type="text" value="#333399"
 
->>>>>>> FETCH_HEAD
+				= f.label :pictures
+					= file_field_tag "images[]", type: :file, multiple: true, :class => 'file'
+					= file_field_tag "images[]", type: :file, multiple: true, :class => 'file_one'
+				= f.text_field :input_front, :class => 'input_front'
+
+
 		.step#two
 			.content 
 				= f.text_area :poem, :placeholder => "Gedicht of verhaal", :class => 'poem', autofocus: true
