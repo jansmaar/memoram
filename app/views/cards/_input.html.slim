@@ -1,6 +1,5 @@
-
 .container.bg-color
- #canvas
+
 	ul.choose_step
 		li.active= link_to 'Voorkant', :class => 'step_one'
 		li= link_to 'Binnenkant', :class => 'step_two'
@@ -14,30 +13,8 @@
 				= f.label :pictures
 					= file_field_tag "images[]", type: :file, multiple: true, :class => 'file'
 					= file_field_tag "images[]", type: :file, multiple: true, :class => 'file_one'
-				
 				= f.text_field :input_front, :class => ['input_front', 'form-control']
-				input#color1 name="color1" type="text" value="#333399"
-					#myform
-					  select#fs
-					    option value="Arial"  Arial
-					    option value=("Verdana ")  Verdana
-					    option value=("Impact ")  Impact
-					    option value=("Comic Sans MS")  Comic Sans MS
-					  select#size
-					    option value="6"  6
-					    option value="12"  12
-					    option value="18"  18
-					    option value="24"  24
-					    option value="30"  30
-					    option value="36"  36
-					    option value="42"  42
-					    option value="48"  48
-					    option value="54"  54
-					    option value="60"  60
-					    option value="66"  66
-					    option value="72"  72
-					    option value="78"  78
-					    option value="84"  84
+
 
 		.step#two
 			.content 
@@ -61,10 +38,10 @@
 				= f.submit "Afronden"
 		
 		.card.show
-			p.input_front1.changeMe
-			.upload-preview
-				img.edit
-			.upload-preview_one
+			p.input_front1
+			.upload-preview.edit
+				img
+			.upload-preview_one.edit
 				img
 								
 		.card

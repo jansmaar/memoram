@@ -28,6 +28,18 @@ ul.choose_step
 input #card_picture 
 	border: none
 
+.content input
+	border-color: #cccccc
+	font-size: 14px
+	text-align: left
+	border-width: 1px
+	width: 100%
+	border-radius: 5px
+	border-style: solid
+	padding: 5px
+	margin-bottom: 5px
+	color: #b8b8b8
+
 ul.choose_step li.active a
 	color: #b7d762
 	font-weight: bold
@@ -126,15 +138,16 @@ ul.choose_step li.active a
 	-webkit-transition: opacity .25s ease-in-out
 
 .upload-preview
+	position: relative
 	width: 60%
 
-#canvas img
-	position: absolute
-	width: 50%
+img
+	width: 100%
+
 
 p.poem1
 	text-align: center
-	word-wrap: break-word !important
+	word-wrap: break-word
 
 
 p.announcement1  
@@ -148,7 +161,7 @@ h2.first_name1
 
 p.input_front1
 	position: absolute
-	z-index: 1000
+	z-index: 999
 
 .edit
 	cursor: move
