@@ -29,13 +29,21 @@ jQuery(document).ready(function($) {
     $('#color1').colorPicker();
     $('#color1').change(function(){
 
-    $(function() {
-        var bgColor = $('#color1').val();
+        $(function() {
+            var bgColor = $('#color1').val();
          
-        $('.input_front1').css('color','' + bgColor)
+            $('.input_front1').css('color','' + bgColor)
+        });
+    });
+    $("#fs").change(function() {
+    //alert($(this).val());
+        $('.changeMe').css("font-family", $(this).val());
+    });
+
+    $("#size").change(function() {
+        $('.changeMe').css("font-size", $(this).val() + "px");
     });
 });
-  });
 
 
 
