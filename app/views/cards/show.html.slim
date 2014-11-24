@@ -1,18 +1,18 @@
 
 
 .container
-	.card-front
+	.rouwbericht
 		- @card.pictures.each do |p|
 			= image_tag p.image, :class => "card-background"
 
-	.text-card
-		p = @card.input_front
+	.rouwbericht-text
 		p.poem = @card.poem
 		h2.name = @card.name
-		p.dates = "#{ @card.birthday.strftime("%d-%m-%y") } " " - " " #{ @card.deceasedon.strftime("%d-%m-%y") }"
+		p.birthday = @card.birthday.strftime("%d-%m-%y") 
+		p.deceasedon = @card.deceasedon.strftime("%d-%m-%y")
+		p.place = @card.birthplace
+		p.lastresidence = @card.lastresidence
 		p.signed = @card.signed
-		p.place = "#{ @card.province }" "," " #{ @card.birthplace }"
-		p = @card.lastresidence
 		p = @card.parting_information 
 
 
