@@ -1,7 +1,9 @@
 class CardsController < ApplicationController
 
 	def index
-	  @cards = Card.all
+	@q = Card.search(params[:q])
+	@cards = @q.result(distinct: true)
+	#@cards = Card.all
 	end
 	
 	def show

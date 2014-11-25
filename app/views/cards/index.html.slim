@@ -1,6 +1,10 @@
 
 .container
-	.row
+	= search_form_for @q do |f|
+		= f.select :province_cont, ["kies provincie", "Drenthe", "Flevoland", "Friesland", "Gelderland", "Groningen", "Limburg", "Noord-Brabant", "Noord-Holland", "Overijssel", "Utrecht", "Zeeland", "Zuid-Holland"]
+		= f.text_field :lastresidence
+		= f.submit "Zoeken"
+ 	.row
 		- @cards.each do |t|
 		  .col-sm-6.col-md-4
 		    .thumbnail
@@ -10,5 +14,26 @@
 		        	p = t.birthplace
 		        	p = "#{ t.birthday.strftime("%d-%m-%y")} " "-" " #{  t.deceasedon.strftime("%d-%m-%y") }"
 		        	= link_to "Bekijk dit bericht", card_path(t), :class => "btn btn-primary"
+
+= search_form_for @q do |f|
+img#Image-Maps-Com-image-maps-2014-11-25-163423 alt="" border="0" height="1000" orgheight="1000" orgwidth="846" src="http://www.image-maps.com/m/private/38193/37398-hm9d5cl641n4brlvj7spt7vkh5_kaartnederland.png" usemap="#image-maps-2014-11-25-163423" width="846" /
+map#ImageMapsCom-image-maps-2014-11-25-163423 name="image-maps-2014-11-25-163423" 
+  area alt=("Image Map") coords="844,998,846,1000" href="http://www.image-maps.com/index.php?aff=mapped_users_38193" shape="rect" style="outline:none;" title=("Image Map") /
+  area#Friesland alt="" coords="330,117,377,148,448,257,523,262,565,258,604,250,653,223,674,211,651,173,619,146,625,107,638,87,621,62,662,15,581,13,390,37" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Friesland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Friesland" /
+  area#Groningen alt="" coords="655,161,621,148,648,84,631,61,638,51,695,46,728,28,768,28,792,66,835,101,845,179,837,227,821,247,792,206,759,168,728,153,702,139,683,127,675,127" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Groningen&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Groningen" /
+  area#Drenthe alt="" coords="667,181,677,128,699,141,736,161,775,199,799,234,812,270,806,323,750,323,706,322,690,328,660,328,631,307,620,302,634,282,624,252,639,227,672,230,679,210" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Drenthe&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Drenthe" /
+  area#Flevoland alt="" coords="575,329,555,289,526,267,488,289,476,353,427,377,403,422,417,445,448,452,474,455,541,390" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Flevoland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Flevoland" /
+  area#Noord-Holland alt="" coords="380,428,424,449,410,487,368,462,320,473,287,479,257,437,257,365,285,215,312,141,341,132,393,163,416,275,429,331" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Noord-Holland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Noord-Holland" /
+  area#Zeeland alt="" coords="200,814,66,840,10,823,2,733,12,670,83,612,123,599,160,613,206,646,233,671,204,676,209,715,208,771" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Zeeland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Zeeland" /
+  area#Limburg alt="" coords="606,987,520,997,506,960,520,912,526,858,504,826,534,794,565,781,559,740,567,708,595,702,572,665,589,642,632,662,648,755,643,889" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Limburg&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Limburg" /
+  area#Brabant alt="" coords="497,831,517,795,543,793,565,769,541,736,559,701,589,702,580,684,564,657,541,657,503,633,467,626,449,640,424,655,388,655,381,643,357,633,334,633,333,648,314,663,278,666,244,675,218,692,200,693,210,734,216,764,225,776" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Noord-Brabant&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Brabant" /
+  area#Overijssel alt="" coords="760,516,834,494,822,410,788,375,735,356,733,323,719,323,696,326,684,330,652,338,631,316,611,287,625,267,613,264,583,259,560,269,576,303,589,325,584,327,565,341,558,365,585,376,609,397,612,412,611,438,625,468,681,470,704,489" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Overijssel&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Overijssel" /
+  area#Gelderland alt="" coords="415,646,456,622,476,621,507,621,529,632,548,632,583,635,673,622,736,608,776,550,739,525,683,491,647,476,597,458,600,422,595,385,560,381,537,424,495,452,465,478,473,507,487,520,488,534,493,560,502,579,462,575,419,575,395,601,384,618" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Gelderland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Gelderland" /
+  area#Utrecht alt="" coords="349,572,395,559,407,562,426,562,479,562,499,569,489,546,484,519,465,516,447,491,447,470,431,465,391,489,373,476,367,465,337,465,335,487,332,510,330,561" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Utrecht&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Utrecht" /
+  area#Zuid-Holland alt="" coords="251,658,301,644,325,618,343,617,374,600,396,570,390,566,376,566,359,566,342,570,313,563,332,539,317,513,320,491,301,481,277,488,251,481,273,453,250,442,237,464,217,502,205,525,178,542,162,560,151,596,149,603,202,640" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Zuid-Holland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" style="outline:none;" target="_self" title="Zuid-Holland" /
+
+
+
+
 	  
 
