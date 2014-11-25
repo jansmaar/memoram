@@ -1,3 +1,7 @@
+$(document).on("click", ".ui-resizable-ne", function(){
+   $(this).parent().remove();
+});
+
 $(document).ready(function() {
     // var x = 0;
     // $('.element').each(function() {
@@ -8,26 +12,13 @@ $(document).ready(function() {
     //     $(this).resizable({
     //         containment: $('.parent')
     //     });
-    // });
+    // })
+	   
 
-	$(function() {
-    	$('.image').resizable({
-    		aspectRatio: true
-		});
+    	// $('.image').resizable({ handles: "se, ne", aspectRatio: true });
 
-    	$('.image').draggable();
-  	});
-	
-	$(function() {
-    	$( ".input_front1" ).draggable();
-  	});
-	
-	$(function() {
-    	$( ".element3" ).resizable();
-    	$( ".element3" ).draggable();
-  	});
+    	$( ".image" ).resizable({ handles: "se, ne", aspectRatio: true, autoHide: true });
+        $( ".voorkant-text").resizable({autoHide: true });
+    	$( "#canvas >" ).draggable();
 
-	
-
-	
 });

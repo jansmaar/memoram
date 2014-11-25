@@ -15,17 +15,18 @@
 					= file_field_tag "images[]", type: :file, multiple: true, :class => 'file'
 					= file_field_tag "images[]", type: :file, multiple: true, :class => 'file_one'
 				
-				= f.text_field :input_front, :class => ['input_front', 'form-control']
-				input#color1 name="color1" type="text" value="#333399"
-					#myform
-					  select#fs
-					    option value="Arial"  Arial
-					    option value=("Verdana ")  Verdana
-					    option value=("Impact ")  Impact
-					    option value=("Comic Sans MS")  Comic Sans MS
-					#font_size
-					label Text grootte
-					#slider
+				= f.text_area :input_front, :class => ['input_front', 'form-control']
+				.editfunctions
+					input#color1 name="color1" type="text" value="#333399"
+						p lettertype
+						#myform
+						  select#fs
+						    option value="Arial"  Arial
+						    option value=("Verdana ")  Verdana
+						    option value=("Impact ")  Impact
+						    option value=("Comic Sans MS")  Comic Sans MS
+						p Text grootte
+						#slider
 
 		.step#two
 			.content 
@@ -50,11 +51,11 @@
 		
 		.card.show
 			#canvas
-					p.input_front1.changeMe
+					.voorkant-text
+						p.input_front1.changeMe
 					.image
 							img
-	
-					.element3 BOX3
+								
 
 					.upload-preview_one
 						img
