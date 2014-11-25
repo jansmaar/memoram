@@ -5,14 +5,14 @@ $(document).ready(function(){
 
 		$( ".edit" ).resizable();
   	
-        $(".edit").mouseover(function(){		
+        $(".edit img").click(function(){		
 			$(".ui-resizable-handle").css( "display", "block !important");
-    		$(".edit").css("border","2px red dotted");
+    		$(".edit img").css("border","2px red dotted");
     		$(".edit").draggable({ snap: true });
     	});	
 
-		$(".edit").mouseleave(function() {
-  			$(".edit").css( "border", "none" );
+		$(".edit img").mouseleave(function() {
+  			$(".edit img").css( "border", "none" );
   			
 		});
     	
