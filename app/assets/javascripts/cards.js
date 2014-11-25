@@ -1,20 +1,8 @@
 // # Place all the behaviors and hooks related to the matching controller here.
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
+
 $(document).ready(function(){
-
-		$( ".edit" ).resizable();
-  	
-        $(".edit img").click(function(){		
-			$(".ui-resizable-handle").css( "display", "block !important");
-    		$(".edit img").css("border","2px red dotted");
-    		$(".edit").draggable({ snap: true });
-    	});	
-
-		$(".edit img").mouseleave(function() {
-  			$(".edit img").css( "border", "none" );
-  			
-		});
     	
 	var current_step = 0;
 	var step = $('.step');
@@ -156,7 +144,7 @@ jQuery(document).ready(function($) {
 
 // upload van foto live weergave
 $(document).ready(function(){
-    var preview = $(".upload-preview img");
+    var preview = $(".image img");
     
     $(".file").change(function(event){
        var input = $(event.currentTarget);
@@ -209,3 +197,37 @@ $(function() {
             maxDate: '-0d'
         });
     });
+
+// font slider
+$(function() {
+    var aFontsSizeArray = new Array('5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '24', '26', '28', '30', '33', '36', '39', '42', '45', '48', '55', '65', '75', '85', '95', '110', '130', '150');
+    $('#slider').slider({
+        value: 7,
+        min: 1,
+        max: 35,
+        step: 1,
+        slide: function(event, ui) {
+            var sFontSizeArray = aFontsSizeArray[ui.value];
+            $('#font_size').val(sFontSizeArray + ' px');
+            $('.changeMe').css('font-size', sFontSizeArray + 'px' );
+        }
+    });
+    $('#font_size').val((aFontsSizeArray[$('#slider').slider('value')]) + ' px');
+});
+
+jQuery(document).ready(function($) {
+    $('#color1').colorPicker();
+    $('#color1').change(function(){
+
+        $(function() {
+            var bgColor = $('#color1').val();
+         
+            $('.input_front1').css('color','' + bgColor)
+        });
+    });
+    $("#fs").change(function() {
+    //alert($(this).val());
+        $('.changeMe').css("font-family", $(this).val());
+    });
+  });
+

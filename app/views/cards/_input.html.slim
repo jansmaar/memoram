@@ -1,6 +1,6 @@
 
 .container.bg-color
- #canvas
+	
 	ul.choose_step
 		li.active= link_to 'Voorkant', :class => 'step_one'
 		li= link_to 'Binnenkant', :class => 'step_two'
@@ -23,21 +23,9 @@
 					    option value=("Verdana ")  Verdana
 					    option value=("Impact ")  Impact
 					    option value=("Comic Sans MS")  Comic Sans MS
-					  select#size
-					    option value="6"  6
-					    option value="12"  12
-					    option value="18"  18
-					    option value="24"  24
-					    option value="30"  30
-					    option value="36"  36
-					    option value="42"  42
-					    option value="48"  48
-					    option value="54"  54
-					    option value="60"  60
-					    option value="66"  66
-					    option value="72"  72
-					    option value="78"  78
-					    option value="84"  84
+					#font_size
+					label Text grootte
+					#slider
 
 		.step#two
 			.content 
@@ -61,33 +49,35 @@
 				= f.submit "Afronden"
 		
 		.card.show
-			p.input_front1.changeMe
-			.upload-preview.edit
-				img
+			#canvas
+					p.input_front1.changeMe
+					.image
+							img
+	
+					.element3 BOX3
 
-
-			.upload-preview_one.edit
-				img
+					.upload-preview_one
+						img
 								
 		.card
 			
 		.cardright
-			p.edit.edit2.poem1 
-			h2.name1#draggable
-			p.birthplace1#draggable
-			p.lastresidence1#draggable
+			p.poem1 
+			h2.name1
+			p.birthplace1
+			p.lastresidence1
 			br
-			p.birthday1#draggable
-			p.deceasedon1#draggable
+			p.birthday1
+			p.deceasedon1
 			br
-			p.signed1#draggable
-			p.parting_information1#draggable
+			p.signed1
+			p.parting_information1
 
 		.knoppen
 			a.btn.btn-default.prev vorige
 			a.btn.btn-warning.next volgende
 				
-		
+
 		
 	
 	
