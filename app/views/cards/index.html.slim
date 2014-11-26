@@ -1,11 +1,37 @@
 
 .container
-	= search_form_for @q do |f|
-		= f.select :province_cont, ["kies provincie", "Drenthe", "Flevoland", "Friesland", "Gelderland", "Groningen", "Limburg", "Noord-Brabant", "Noord-Holland", "Overijssel", "Utrecht", "Zeeland", "Zuid-Holland"]
-		= f.text_field :lastresidence
-		= f.submit "Zoeken"
- 	.row
-		- @cards.each do |t|
+	.row
+		.col-sm-6.col-md-4.nederland
+			    .thumbnail.nederland
+			    	.caption
+				    	= search_form_for @q do |f|
+
+							.input-group
+							  
+							  = f.text_field :lastresidence_or_province_or_name_cont, :class => 'form-control', :placeholder => "Zoek op plaats, naam o.i.d."
+							  
+							  span.input-group-btn
+							   	= f.submit "Zoeken", :class => 'button btn btn-default'
+
+		      	
+		      		<img id="Image-Maps-Com-image-maps-2014-11-26-071334" src="http://www.image-maps.com/m/private/38269/37452-qo7vj9hre4opl0uqmpijsfa794_nederland-groen.png" border="0" width="260" height="307" orgWidth="260" orgHeight="307" usemap="#image-maps-2014-11-26-071334" alt="" />
+					<map name="image-maps-2014-11-26-071334" id="ImageMapsCom-image-maps-2014-11-26-071334">
+					<area shape="rect" coords="258,305,260,307" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_38269" />
+					<area id="Friesland" alt="Overlijdens advertenties Friesland" title="Friesland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Friesland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="201,1,128,18,118,24,104,37,115,43,135,70,148,74,174,77,197,71,202,64,196,53,185,47,191,34,194,24,194,15" style="outline:none;" target="_self"     />
+					<area id="Groningen" alt="Overlijdens advertenties Groningen" title="Groningen" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Groningen&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="195,14,203,22,199,30,197,42,208,37,222,42,241,52,249,62,253,69,259,36,236,12,225,10" style="outline:none;" target="_self"     />
+					<area id="Drenthe" alt="Overlijdens advertenties Drenthe" title="Drenthe" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Drenthe&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="204,49,208,62,206,71,198,73,194,79,196,86,205,94,225,91,240,94,246,82,247,71,230,52,222,47,213,41,210,40" style="outline:none;" target="_self"     />
+					<area id="Overijsel" alt="Overlijdens advertenties Overijsel" title="Overijsel" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Overijsel&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="187,80,173,82,179,95,179,104,170,106,177,113,187,114,191,125,190,134,196,142,209,140,218,146,233,152,251,129,229,118,225,105,221,98,215,100,209,105,199,100,191,97,188,89" style="outline:none;" target="_self"     />
+					<area id="Flevoland" alt="Overlijdens advertenties Flevoland" title="Flevoland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Flevoland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="160,80,153,90,150,106,123,130,142,139,168,110,168,102,179,97,173,88" style="outline:none;" target="_self"     />
+					<area id="Gelderland" alt="Overlijdens advertenties Gelderland" title="Gelderland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Gelderland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="172,118,145,145,153,165,155,177,126,177,119,188,125,195,134,193,147,186,162,188,172,193,215,182,232,160,209,152,198,148,186,146,185,126,184,119" style="outline:none;" target="_self"     />
+					<area id="Noord-Holland" alt="Overlijdens advertenties Noord-Holland" title="Noord-Holland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Noord-Holland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="102,42,94,58,81,133,86,144,101,142,115,138,125,146,129,138,113,129,117,100,130,95" style="outline:none;" target="_self"     />
+					<area id="Utrecht" alt="Overlijdens advertenties Utrecht" title="Utrecht" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Utrecht&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="133,142,126,152,116,147,112,142,102,146,106,155,111,162,106,169,118,170,135,171,148,171,148,165" style="outline:none;" target="_self"     />
+					<area id="Zuid-Holland" alt="Overlijdens advertenties Zuid-Holland" title="Zuid-Holland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Zuid-Holland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="77,139,54,170,47,182,66,194,84,201,91,194,104,190,116,185,121,176,109,177,102,176,101,171,103,160,96,150" style="outline:none;" target="_self"     />
+					<area id="Noord-Brabant" alt="Overlijdens advertenties Noord-Brabant" title="Noord-Brabant" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Noord-Brabant&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="170,200,151,193,133,200,121,201,114,195,106,191,99,195,103,204,81,206,70,207,60,213,64,236,107,234,130,243,149,248,168,241,172,236,167,226,167,218,170,217,176,216,178,211" style="outline:none;" target="_self"     />
+					<area id="Limburg" alt="Overlijdens advertenties Limburg" title="Limburg" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Limburg&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="181,205,185,219,176,222,173,237,165,246,158,251,163,258,159,298,187,308,197,230" style="outline:none;" target="_self"     />
+					<area id="Zeeland" alt="Overlijdens advertenties Zeeland" title="Zeeland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Zeeland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="29,198,4,221,1,244,9,253,38,252,55,250,61,241,60,228,56,214,56,210,48,204" style="outline:none;" target="_self"     />
+					</map>
+
+		- @cards.order("id DESC").each do |t|
 		  .col-sm-6.col-md-4
 		    .thumbnail
 		      .caption
@@ -16,22 +42,6 @@
 		        	= link_to "Bekijk dit bericht", card_path(t), :class => "btn btn-primary"
 
 
-<img id="Image-Maps-Com-image-maps-2014-11-26-053858" image-url="mapnederland.png" border="0" width="350" height="414" orgWidth="350" orgHeight="414" usemap="#image-maps-2014-11-26-053858" alt="" />
-<map name="image-maps-2014-11-26-053858" id="ImageMapsCom-image-maps-2014-11-26-053858">
-<area shape="rect" coords="348,412,350,414" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_38193" />
-<area id="Friesland" alt="" title="Friesland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Friesland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="138,50,177,83,184,105,206,106,215,105,225,107,236,107,248,101,260,95,271,95,276,89,270,72,255,62,257,45,261,41,266,37,257,19,269,6,209,10,171,19,150,34" style="outline:none;" target="_self"     />
-<area id="Groningen" alt="" title="Groningen" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Groningen&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="268,67,279,52,297,61,312,63,334,88,340,99,349,85,348,60,342,37,327,25,303,11,285,10,273,19,269,33,263,51,263,61" style="outline:none;" target="_self"     />
-<area id="Drenthe" alt="" title="Drenthe" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Drenthe&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="258,120,278,134,294,128,304,131,319,131,336,131,336,112,333,97,323,88,310,78,301,68,292,65,282,58,275,65,282,80,282,88,276,98,267,98,258,107" style="outline:none;" target="_self"     />
-<area  alt="" title="Noord-Holland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Noord-Holland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="126,54,149,61,159,99,176,127,171,154,159,179,159,187,149,194,131,191,123,189,112,182,107,174" style="outline:none;" target="_self"     />
-<area id="Flevoland" alt="" title="Flevoland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Flevoland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="159,177,191,193,200,179,215,169,227,155,231,140,232,126,227,115,214,110,201,119,186,151" style="outline:none;" target="_self"     />
-<area id="Overijssel" alt="" title="Overijssel" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Overijssel&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="309,215,340,194,330,160,325,144,309,137,295,135,282,138,260,134,260,126,254,113,245,114,239,114,236,119,237,129,236,136,230,144,230,151,245,163,253,173,253,183,267,195,280,189,291,200" style="outline:none;" target="_self"     />
-<area id="Gelderland" alt="" title="Gelderland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Gelderland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="174,266,191,258,202,258,210,258,223,262,242,264,246,260,258,249,293,257,303,245,318,233,312,219,297,206,281,202,272,199,255,198,250,194,242,177,250,168,240,160,231,160,211,177,199,192,192,197,199,214,205,228,211,237,191,240,169,240,160,258" style="outline:none;" target="_self"     />
-<area id="Limburg" alt="" title="Limburg" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Limburg&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="241,280,256,281,269,321,268,344,268,371,267,396,259,412,248,416,224,416,213,407,215,385,215,367,215,358,212,346,214,333,231,329,237,319,232,304,239,296" style="outline:none;" target="_self"     />
-<area id="Noord-Brabant" alt="" title="Noord-Brabant" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Noord-Brabant&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="204,339,232,323,223,304,227,293,243,288,231,272,207,261,194,262,177,271,157,271,149,261,139,263,121,276,109,278,93,281,86,288,88,306,88,315,141,311,176,336" style="outline:none;" target="_self"     />
-<area id="Zeeland" alt="" title="Zeeland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Zeeland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="80,336,88,280,89,264,81,255,72,250,54,251,37,261,28,275,17,296,7,317,2,338,53,346" style="outline:none;" target="_self"     />
-<area id="Zuid-Holland" alt="" title="Zuid-Holland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Zuid-Holland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="104,181,87,208,72,228,67,250,109,270,134,258,153,247,162,236,147,239,139,239,133,227,138,222,138,209,133,198,127,198,112,205" style="outline:none;" target="_self"     />
-<area id="Utrecht" alt="" title="Utrecht" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Utrecht&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="142,235,153,228,171,232,180,229,190,229,205,235,200,223,198,218,189,206,187,199,182,194,173,190,167,194,153,196,149,190,142,199,136,201" style="outline:none;" target="_self"     />
-</map>
 
 
 	  
