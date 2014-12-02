@@ -41,6 +41,8 @@
 		        	p = "#{ t.birthday.strftime("%d-%m-%y")} " "-" " #{  t.deceasedon.strftime("%d-%m-%y") }"
 		        	= link_to "Bekijk dit bericht", card_path(t), :class => "btn btn-primary"
 
+	= will_paginate @cards
+
 
 
 

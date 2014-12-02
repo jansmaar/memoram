@@ -2,7 +2,7 @@ class CardsController < ApplicationController
 
 	def index
 	@q = Card.search(params[:q])
-	@cards = @q.result(distinct: true)
+	@cards = @q.result(distinct: true).paginate(:page => params[:page], :per_page => 7)
 	#@cards = Card.all
 	end
 	

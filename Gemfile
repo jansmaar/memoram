@@ -7,6 +7,7 @@ gem 'annotate'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem "ransack"
+gem 'will_paginate', '~> 3.0.6'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
