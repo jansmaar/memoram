@@ -19,3 +19,4 @@
 	
 	= button_to "verwijder", @card, :method => :delete
 	= link_to "aanpassen", edit_card_path
+	= link_to "Download PDF", :action => "show", :format => :pdf
