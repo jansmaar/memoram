@@ -8,13 +8,15 @@ class CardsController < ApplicationController
 	
 	def show
     @card = Card.find(params[:id])
-    respond_to do |format|
+       respond_to do |format|
       format.html
       format.pdf do
         render :pdf => "#{@card.name}",
-        	:template => 'cards/show.html.slim',
+        	:template => 'cards/pdf.html.slim',
         	:page_size => "A4",
-        	:disposition => 'attachment'
+        	:disposition => 'attachment',
+        	:no_background => true,
+        	:orientation => 'Landscape'
     	end
 		end
 	end

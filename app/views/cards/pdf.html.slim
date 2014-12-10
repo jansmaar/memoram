@@ -1,0 +1,24 @@
+head
+	= wicked_pdf_stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+	= wicked_pdf_javascript_include_tag "application", "data-turbolinks-track" => true 
+	meta charset="utf-8"
+.container
+	.rouwbericht
+		- @card.pictures.each do |p|
+			= wicked_pdf_image_tag p.image, :class => "card-background"
+
+	.rouwbericht-text
+		p.poem = @card.poem
+		h2.name = @card.name
+		p.birthday = @card.birthday.strftime("%d-%m-%y") 
+		p.deceasedon = @card.deceasedon.strftime("%d-%m-%y")
+		p.place = @card.birthplace
+		p.lastresidence = @card.lastresidence
+		p.signed = @card.signed
+		p = @card.parting_information 
+
+
+	
+	= button_to "verwijder", @card, :method => :delete
+	= link_to "aanpassen", edit_card_path
+	= link_to "Download PDF", :action => "show", :format => :pdf
