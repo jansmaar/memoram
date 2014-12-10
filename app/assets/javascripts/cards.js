@@ -230,4 +230,26 @@ jQuery(document).ready(function($) {
         $('.changeMe').css("font-family", $(this).val());
     });
   });
+// bg image picker
+$(document).ready(function(){
+$('#menu').click(function(){
+$('#thumb').slideToggle('slow');
+});
+$('#thumb img').click(function(){
+ var imgbg = $(this).attr('src');
+ //console.log(imgbg);
+ $('.card.show').css({backgroundImage: "url("+imgbg+")"});
+ $('.card.show').css({ 'opacity' : 0.2 });
+ $('.card.show').css({'background-size': 'cover'});
+ });
+
+"background-size", "cover"
+
+ $('#menu1').click(function(){
+ $('#thumb').hide();
+
+ });
+
+});
+
 
