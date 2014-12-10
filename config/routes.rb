@@ -1,8 +1,6 @@
 Memoram::Application.routes.draw do
 
-  resources :cards do
-    collection { post :search, to: 'cards#index' }
-  end
+  resources :cards
 
   root :to => "cards#index"
   # The priority is based upon order of creation: first created -> highest priority.
