@@ -230,6 +230,7 @@ jQuery(document).ready(function($) {
         $('.changeMe').css("font-family", $(this).val());
     });
   });
+
 // bg image picker
 $(document).ready(function(){
 $('#menu').click(function(){

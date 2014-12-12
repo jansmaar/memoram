@@ -55,6 +55,11 @@ class CardsController < ApplicationController
  		@card = Card.find(params[:id])
     @card.destroy
     redirect_to cards_path
+	end	
+
+	def startpage
+		@q = Card.search(params[:q])
+		@cards = @q.result(distinct: true).paginate(:page => params[:page], :per_page => 7)
 	end
 	
 	private

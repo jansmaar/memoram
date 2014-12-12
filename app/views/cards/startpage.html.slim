@@ -1,0 +1,58 @@
+.container
+	.row
+		.col-sm-6.col-md-4
+			.thumbnail
+				.caption
+					h3 Rouwkaart maken
+					hr
+					.cardimg = image_tag ("rouwkaart.png")
+					p Maak de rouwkaart geheel naar eigen wens. Je kunt hier zelf de foto’s, teksten, kleuren, lettertype. bepalen. Ook mogelijk om direct naar je familie toe te sturen. Als je de kaart vandaag maakt wordt de kaart vandaag op de post gedaan.
+					= link_to "Ontwerp Rouwkaart", new_card_path, :class => "btn btn-primary"
+		.col-sm-6.col-md-4
+			.thumbnail
+				.caption
+					h3 Rouwbericht maken
+					hr
+					p Het online plaatsen van een overlijdens bericht is gratis bij het bestellen van rouwkaarten. Als je alleen een overlijdensbericht wil maken kost dit 25 euro.
+					= link_to "Ontwerp Rouwbericht", new_card_path, :class => "btn btn-primary"
+
+		.col-sm-6.col-md-4.nederland
+			    .thumbnail.nederland
+			    	.caption
+				    	= search_form_for @q do |f|
+
+							.input-group
+							  
+							  = f.text_field :lastresidence_or_province_or_name_cont, :class => 'form-control', :placeholder => "Zoek op plaats, naam o.i.d."
+							  
+							  span.input-group-btn
+							   	= f.submit "Zoeken", :class => 'button btn btn-default'
+
+		      	
+		      		<img id="Image-Maps-Com-image-maps-2014-11-26-071334" src="http://www.image-maps.com/m/private/38269/37452-qo7vj9hre4opl0uqmpijsfa794_nederland-groen.png" border="0" width="260" height="307" orgWidth="260" orgHeight="307" usemap="#image-maps-2014-11-26-071334" alt="" />
+					<map name="image-maps-2014-11-26-071334" id="ImageMapsCom-image-maps-2014-11-26-071334">
+					<area shape="rect" coords="258,305,260,307" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_38269" />
+					<area id="Friesland" alt="Overlijdens advertenties Friesland" title="Friesland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Friesland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="201,1,128,18,118,24,104,37,115,43,135,70,148,74,174,77,197,71,202,64,196,53,185,47,191,34,194,24,194,15" style="outline:none;" target="_self"     />
+					<area id="Groningen" alt="Overlijdens advertenties Groningen" title="Groningen" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Groningen&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="195,14,203,22,199,30,197,42,208,37,222,42,241,52,249,62,253,69,259,36,236,12,225,10" style="outline:none;" target="_self"     />
+					<area id="Drenthe" alt="Overlijdens advertenties Drenthe" title="Drenthe" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Drenthe&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="204,49,208,62,206,71,198,73,194,79,196,86,205,94,225,91,240,94,246,82,247,71,230,52,222,47,213,41,210,40" style="outline:none;" target="_self"     />
+					<area id="Overijsel" alt="Overlijdens advertenties Overijsel" title="Overijsel" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Overijsel&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="187,80,173,82,179,95,179,104,170,106,177,113,187,114,191,125,190,134,196,142,209,140,218,146,233,152,251,129,229,118,225,105,221,98,215,100,209,105,199,100,191,97,188,89" style="outline:none;" target="_self"     />
+					<area id="Flevoland" alt="Overlijdens advertenties Flevoland" title="Flevoland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Flevoland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="160,80,153,90,150,106,123,130,142,139,168,110,168,102,179,97,173,88" style="outline:none;" target="_self"     />
+					<area id="Gelderland" alt="Overlijdens advertenties Gelderland" title="Gelderland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Gelderland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="172,118,145,145,153,165,155,177,126,177,119,188,125,195,134,193,147,186,162,188,172,193,215,182,232,160,209,152,198,148,186,146,185,126,184,119" style="outline:none;" target="_self"     />
+					<area id="Noord-Holland" alt="Overlijdens advertenties Noord-Holland" title="Noord-Holland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Noord-Holland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="102,42,94,58,81,133,86,144,101,142,115,138,125,146,129,138,113,129,117,100,130,95" style="outline:none;" target="_self"     />
+					<area id="Utrecht" alt="Overlijdens advertenties Utrecht" title="Utrecht" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Utrecht&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="133,142,126,152,116,147,112,142,102,146,106,155,111,162,106,169,118,170,135,171,148,171,148,165" style="outline:none;" target="_self"     />
+					<area id="Zuid-Holland" alt="Overlijdens advertenties Zuid-Holland" title="Zuid-Holland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Zuid-Holland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="77,139,54,170,47,182,66,194,84,201,91,194,104,190,116,185,121,176,109,177,102,176,101,171,103,160,96,150" style="outline:none;" target="_self"     />
+					<area id="Noord-Brabant" alt="Overlijdens advertenties Noord-Brabant" title="Noord-Brabant" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Noord-Brabant&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="170,200,151,193,133,200,121,201,114,195,106,191,99,195,103,204,81,206,70,207,60,213,64,236,107,234,130,243,149,248,168,241,172,236,167,226,167,218,170,217,176,216,178,211" style="outline:none;" target="_self"     />
+					<area id="Limburg" alt="Overlijdens advertenties Limburg" title="Limburg" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Limburg&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="181,205,185,219,176,222,173,237,165,246,158,251,163,258,159,298,187,308,197,230" style="outline:none;" target="_self"     />
+					<area id="Zeeland" alt="Overlijdens advertenties Zeeland" title="Zeeland" href="/cards?utf8=✓&q%5Bprovince_cont%5D=Zeeland&q%5Blastresidence%5D=&commit=Zoeken" shape="poly" coords="29,198,4,221,1,244,9,253,38,252,55,250,61,241,60,228,56,214,56,210,48,204" style="outline:none;" target="_self"     />
+					</map>
+
+		.col-sm-6.col-md-8
+			.thumbnail
+				.caption
+					h3 Maak de Rouwkaart bijzonder en persoonlijk.
+					hr
+					li 	Keus uit eigen foto’s of uit de fotogalerij
+					li	Eigen teksten en plaatsing van de tekst
+					li	Lettertype en kleur
+					li	Papiersoort mat of glans(beste kwaliteit 300 grams)
+					li	Direct versturen naar je familie en vrienden

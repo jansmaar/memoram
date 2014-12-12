@@ -2,7 +2,7 @@ Memoram::Application.routes.draw do
 
   resources :cards
 
-  root :to => "cards#index"
+  root :to => "cards#startpage"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
