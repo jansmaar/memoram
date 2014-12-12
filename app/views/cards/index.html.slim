@@ -38,7 +38,7 @@
 		        	h3.text = link_to t.name, card_path(t)
 		        	hr
 		        	p.text = t.birthplace
-		        	p.text = "#{ t.birthday.strftime("%d-%m-%y")} " "-" " #{  t.deceasedon.strftime("%d-%m-%y") }"
+		        	p.text = "#{ t.birthday.strftime("%d-%m-%y")} " "|" " #{  t.deceasedon.strftime("%d-%m-%y") }"
 		        	.message = link_to "Bekijk dit bericht", card_path(t), :class => "btn btn-primary"
 
 

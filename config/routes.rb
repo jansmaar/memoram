@@ -2,7 +2,9 @@ Memoram::Application.routes.draw do
 
   resources :cards
 
-  get "assortment" => "cards#assortment", :as => "assortment"
+  get "kies/kaart" => "cards#assortment", :as => "assortment"
+  get "overzicht" => "cards#index", :as => "overzicht"
+  get "ontwerp/kaart" => "cards#new", :as => "ontwerp"
 
   root :to => "cards#startpage"
   # The priority is based upon order of creation: first created -> highest priority.
