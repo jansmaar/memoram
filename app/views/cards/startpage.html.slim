@@ -11,14 +11,16 @@
 		.col-sm-6.col-md-4
 			.thumbnail
 				.caption
-					h3 Rouwbericht maken
+					h3 Overlijdensbericht maken
 					hr
-					p Het online plaatsen van een overlijdens bericht is gratis bij het bestellen van rouwkaarten. Als je alleen een overlijdensbericht wil maken kost dit 25 euro.
+					.cardimg = image_tag ("rouwbericht.png")
+					p Bij het bestellen van rouwkaarten krijgt u gratis een overlijdensbericht, hiermee kunt u mensen op de hoogte stellen waarvan u de adressen niet heeft of inhet buitenland woonen. Als je alleen een overlijdensbericht wil maken kost dit eenmalig 25 euro. 
 					= link_to "Ontwerp Rouwbericht", new_card_path, :class => "btn btn-primary"
 
 		.col-sm-6.col-md-4.nederland
 			    .thumbnail.nederland
 			    	.caption
+			    		h3 Uw omgeving
 				    	= search_form_for @q do |f|
 
 							.input-group
@@ -50,7 +52,8 @@
 			.thumbnail
 				.caption
 					h3 Maak de Rouwkaart bijzonder en persoonlijk.
-					hr
+					hr 
+					= image_tag ("enveloppe.png")
 					li 	Keus uit eigen foto’s of uit de fotogalerij
 					li	Eigen teksten en plaatsing van de tekst
 					li	Lettertype en kleur
