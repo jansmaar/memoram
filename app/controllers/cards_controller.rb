@@ -61,6 +61,10 @@ class CardsController < ApplicationController
 		@q = Card.search(params[:q])
 		@cards = @q.result(distinct: true).paginate(:page => params[:page], :per_page => 7)
 	end
+
+	def assortment
+
+	end
 	
 	private
   def card_params
