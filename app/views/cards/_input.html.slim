@@ -60,6 +60,19 @@
 		
 		.step#four
 			.content
+				= f.text_field :first_name, :placeholder => "Voornaam", :class => ['name', 'form-control']
+				= f.text_field :last_name, :placeholder => "Achternaam", :class => ['name', 'form-control']
+				= f.text_field :street_name, :placeholder => "Straat", :class => ['name', 'form-control']
+				= f.text_field :house_number, :placeholder => "Huisnummer", :class => ['name', 'form-control']
+				= f.text_field :addition, :placeholder => "Toevoeging", :class => ['name', 'form-control']
+				= f.text_field :zip_code, :placeholder => "Postcode", :class => ['name', 'form-control']
+				= f.text_field :address, :placeholder => "Dorp of stad", :class => ['name', 'form-control']
+				= f.text_field :email, :placeholder => "E-mail", :class => ['name', 'form-control']
+				= f.text_field :phone_number, :placeholder => "Telefoon nummer", :class => ['name', 'form-control']
+				= f.date_field :shipping_date, :placeholder => "Verzend datum", :class => ['shipping_date', 'form-control']
+				= f.text_field :quantity, :placeholder => "Aantal kaarten", :class => ['name', 'form-control']
+				= f.text_field :country, :placeholder => "Land", :class => ['name', 'form-control']
+
 				= f.submit "Afronden"
 		
 		.card.show

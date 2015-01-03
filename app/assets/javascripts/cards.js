@@ -198,6 +198,16 @@ $(function() {
         });
     });
 
+$(function() {
+        $( ".shipping_date" ).datepicker({
+            dateFormat : 'dd/mm/yy',
+            changeMonth : true,
+            changeYear : true,
+            minDate: '-0',
+            maxDate: '+4d'
+        });
+    });
+
 // font slider
 $(function() {
     var aFontsSizeArray = new Array('5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '24', '26', '28', '30', '33', '36', '39', '42', '45', '48', '55', '65', '75', '85', '95', '110', '130', '150');
